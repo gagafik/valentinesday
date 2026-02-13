@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Для моей любимой 💕</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Фоновые сердечки -->
+    <div class="background-hearts"></div>
+
+    <!-- Главный контейнер -->
+    <div class="container">
+        
+        <!-- Экран 1: Приветствие -->
+        <div id="screen-1" class="screen active">
+            <div class="card welcome-card">
+                <div class="emoji-header">💌</div>
+                <h1 class="main-title">Для самой прекрасной</h1>
+                <p class="subtitle">Специальное послание ко Дню святого Валентина</p>
+                <div class="hint">👇 Нажми, чтобы начать 👇</div>
+                <button class="main-button pulse" id="start-button">
+                    Открыть послание
+                </button>
+            </div>
+        </div>
+
+        <!-- Экран 2: Наша история в фото -->
+        <div id="screen-2" class="screen">
+            <div class="card photo-card">
+                <h2 class="section-title">Наша история в моментах 📸</h2>
+                
+                <!-- Слайдер фотографий -->
+                <div class="photo-slider">
+                    <div class="slider-container">
+                        <div class="slide active">
+                            <img src="images/photo1.jpg" alt="Наше фото" onerror="this.src='https://via.placeholder.com/600x400/ff69b4/ffffff?text=Фото+1'">
+                            <p class="photo-caption">Зимние приключения с нашим малышом 🐶❄️</p>
+                        </div>
+                        <div class="slide">
+                            <img src="images/photo2.jpg" alt="Наше фото" onerror="this.src='https://via.placeholder.com/600x400/ff69b4/ffffff?text=Фото+2'">
+                            <p class="photo-caption">Каждое утро рядом с тобой — волшебство 🌅</p>
+                        </div>
+                        <div class="slide">
+                            <img src="images/photo3.jpg" alt="Наше фото" onerror="this.src='https://via.placeholder.com/600x400/ff69b4/ffffff?text=Фото+3'">
+                            <p class="photo-caption">Путешествия вдвоём — лучшие моменты 🎩✨</p>
+                        </div>
+                        <div class="slide">
+                            <img src="images/photo4.jpg" alt="Наше фото" onerror="this.src='https://via.placeholder.com/600x400/ff69b4/ffffff?text=Фото+4'">
+                            <p class="photo-caption">Ты и я — идеальная команда 💑</p>
+                        </div>
+                        <div class="slide">
+                            <img src="images/photo5.jpg" alt="Наше фото" onerror="this.src='https://via.placeholder.com/600x400/ff69b4/ffffff?text=Фото+5'">
+                            <p class="photo-caption">Романтические вечера вместе 🍽️💕</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Навигация слайдера -->
+                    <button class="slider-btn prev" id="prev-btn">‹</button>
+                    <button class="slider-btn next" id="next-btn">›</button>
+                    
+                    <!-- Точки индикации -->
+                    <div class="slider-dots" id="slider-dots">
+                        <span class="dot active" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                        <span class="dot" data-slide="2"></span>
+                        <span class="dot" data-slide="3"></span>
+                        <span class="dot" data-slide="4"></span>
+                    </div>
+                </div>
+
+                <button class="main-button" id="continue-1">
+                    Продолжить →
+                </button>
+            </div>
+        </div>
+
+        <!-- Экран 3: Интерактивные карточки "Почему я люблю тебя" -->
+        <div id="screen-3" class="screen">
+            <div class="card reasons-card">
+                <h2 class="section-title">Почему я люблю тебя 💖</h2>
+                <p class="section-subtitle">Нажми на каждую карточку</p>
+                
+                <div class="reasons-grid">
+                    <div class="reason-card">
+                        <div class="reason-front">
+                            <div class="reason-icon">😊</div>
+                            <h3>Твоя улыбка</h3>
+                        </div>
+                        <div class="reason-back">
+                            <p>Когда ты улыбаешься, весь мир становится ярче. Твоя улыбка — моё любимое зрелище!</p>
+                        </div>
+                    </div>
+
+                    <div class="reason-card">
+                        <div class="reason-front">
+                            <div class="reason-icon">🎭</div>
+                            <h3>Чувство юмора</h3>
+                        </div>
+                        <div class="reason-back">
+                            <p>С тобой я смеюсь каждый день. Ты умеешь превратить любой момент в праздник!</p>
+                        </div>
+                    </div>
+
+                    <div class="reason-card">
+                        <div class="reason-front">
+                            <div class="reason-icon">💪</div>
+                            <h3>Твоя сила</h3>
+                        </div>
+                        <div class="reason-back">
+                            <p>Ты моя опора и поддержка. Твоя внутренняя сила вдохновляет меня каждый день!</p>
+                        </div>
+                    </div>
+
+                    <div class="reason-card">
+                        <div class="reason-front">
+                            <div class="reason-icon">🐶</div>
+                            <h3>Любовь к нашему малышу</h3>
+                        </div>
+                        <div class="reason-back">
+                            <p>Видеть, как ты заботишься о нашей собачке, растапливает моё сердце. Мы — настоящая семья! 💕</p>
+                        </div>
+                    </div>
+
+                    <div class="reason-card">
+                        <div class="reason-front">
+                            <div class="reason-icon">✨</div>
+                            <h3>Просто ты</h3>
+                        </div>
+                        <div class="reason-back">
+                            <p>Ты особенная именно такая, какая ты есть. Каждая деталь делает тебя идеальной для меня!</p>
+                        </div>
+                    </div>
+
+                    <div class="reason-card">
+                        <div class="reason-front">
+                            <div class="reason-icon">🌍</div>
+                            <h3>Наши приключения</h3>
+                        </div>
+                        <div class="reason-back">
+                            <p>С тобой каждый день — это новое приключение. Хочу открывать мир рядом с тобой!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="main-button" id="continue-2">
+                    Дальше →
+                </button>
+            </div>
+        </div>
+
+        <!-- Экран 4: Главное признание -->
+        <div id="screen-4" class="screen">
+            <div class="card final-card">
+                <div class="big-heart">❤️</div>
+                <h2 class="final-title">С Днём святого Валентина, любимая!</h2>
+                
+                <div class="final-message">
+                    <p>Каждый день рядом с тобой — это подарок. 🎁</p>
+                    <p>Ты делаешь мою жизнь ярче, теплее и наполненнее смыслом.</p>
+                    <p>Спасибо за то, что ты есть. За твою любовь, заботу, за каждую улыбку и каждый момент вместе.</p>
+                    <p class="highlight">Я люблю тебя больше, чем вчера, но меньше, чем завтра! 💕</p>
+                    <p class="signature">— Твой Сакен 💑</p>
+                </div>
+
+                <div class="final-buttons">
+                    <button class="secondary-button" id="restart-button">
+                        🔄 Начать сначала
+                    </button>
+                    <button class="main-button" id="heart-explosion">
+                        💖 Отправить любовь
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Контейнер для летающих сердечек -->
+    <div id="hearts-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
